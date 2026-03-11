@@ -12,3 +12,7 @@
 8. Repeat the process.
 
 > The algorithm continuously monitors the button input. Once the button is pressed, the ESP32 sends a request to the Twilio API, which then triggers an SMS alert.
+
+while True:
+    if button_pressed():
+        send_sms()
