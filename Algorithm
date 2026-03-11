@@ -1,0 +1,14 @@
+1. Start the system.
+2. Initialize the ESP32 microcontroller.
+3. Connect the device to the WiFi network.
+4. Configure the push button as an input.
+5. Continuously monitor the button state.
+6. If the button is pressed:
+      a. Trigger the alert function.
+      b. Send an HTTP request to the Twilio API.
+      c. Twilio processes the request and sends an SMS.
+7. If the button is not pressed:
+      Continue monitoring the button.
+8. Repeat the process.
+
+> The algorithm continuously monitors the button input. Once the button is pressed, the ESP32 sends a request to the Twilio API, which then triggers an SMS alert.
